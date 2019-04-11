@@ -13,7 +13,6 @@
 #include <stdio.h>
 #include "lottery.h"
 
-//asdf
 
 static FILE* stream;
 static char seperator;
@@ -51,5 +50,6 @@ int get_tip_result(int tip_number)
 
 int get_right_tips_count(int right_digits_count)
 {
+  return 0;
 
 }
