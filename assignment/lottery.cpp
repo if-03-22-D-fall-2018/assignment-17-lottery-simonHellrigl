@@ -13,13 +13,12 @@
 #include <stdio.h>
 #include "lottery.h"
 
+//asdf
 
 static FILE* stream;
 static char seperator;
 
-#define MAX_LINE_LEN   (UUID_LEN + 1 + MAX_TIP_LEN + 1);
-#define MAX_TIP_LEN   17;
-#define UUID_LEN   40;
+
 
 
 bool init_lottery(const char *csv_file, char csv_separator)
@@ -29,15 +28,14 @@ bool init_lottery(const char *csv_file, char csv_separator)
     {
         return false;
     }
-
     seperator = csv_separator;
-   return true;
+    return true;
 
 }
 
 bool get_tip(int tip_number, int tip[TIP_SIZE])
 {
-    fseek(tip_number, -TIP_SIZE / 2, SEEK_END)
+    return 0;
 }
 
 bool set_drawing(int drawing_numbers[TIP_SIZE])
