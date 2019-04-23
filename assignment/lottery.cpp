@@ -70,9 +70,16 @@ bool get_tip(int tip_number, int tip[TIP_SIZE])
 
 bool set_drawing(int drawing_numbers[TIP_SIZE])
 {
-  for (int i = 0; i < TIP_SIZE; i++) {
-    if (drawing_numbers[i] <= 0 || drawing_numbers[i] > 45) return false;
-    else drawing_of_numbers[i] = drawing_numbers[i];
+  for (int i = 0; i < TIP_SIZE; i++)
+  {
+    if (drawing_numbers[i] <= 0 || drawing_numbers[i] > 45)
+    {
+       return false;
+    }
+    else
+    {
+      drawing_of_numbers[i] = drawing_numbers[i];
+    }
   }
   return true;
 }
